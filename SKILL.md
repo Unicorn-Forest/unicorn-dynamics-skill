@@ -60,10 +60,28 @@ The KSM combines Alexander's differentiation process with nested iteration cycle
                     └─────────────────────────────────────────────┘
 ```
 
+**KSM 12-Step Dual Perspective:**
+
+| Step | Perspective A (Analysis) | Perspective B (Transformation) |
+|------|--------------------------|--------------------------------|
+| 1 | Analyze Problem in Space and Time | Desired End-State |
+| 2 | Differentiate Tasks into Centres | Transform Tasks to Centers |
+| 3 | Choose Critical Centre | Choose Critical Center |
+| 4 | Identify Constraints and Relationships | Desired End-State (Iteration) |
+| 5 | Differentiate Sub-Tasks to Centres | Transform Tasks to Centers |
+| 6 | Strengthen Centres | Strengthen Centers |
+| 7 | Integrate with Iteration Vision | Compare to Iteration Vision |
+| 8 | Evaluate Correctness and Simplicity | Simplify the Centers; Assess Iteration Vision |
+| 9 | Assess Iteration Vision | Feedback |
+| 10 | Integrate with Solution Vision | Compare to Solution Vision |
+| 11 | Evaluate Correctness and Simplicity | Simplify the Center; Assess Solution Vision |
+| 12 | Assess Solution Vision | Feedback |
+
+---
+
 **Outer Loop (Solution Cycle - Steps 1-3, 10-12):**
 
 | Step | Action | From | To |
-|------|--------|------|----|
 | 1 | **Desired End-State** | Problem | Solution Vision |
 | 2 | **Transform Tasks to Centers** | Solution Vision | Centers |
 | 3 | **Choose Critical Center** | Centers | → Inner Loop |
@@ -91,13 +109,16 @@ The KSM combines Alexander's differentiation process with nested iteration cycle
 - **Strengthen Center (Iteration)**: Output of inner loop, input to outer loop
 - **Assess**: Comparison/evaluation checkpoints
 
-**Process Dynamics:**
-- Steps 1 & 4 establish **Desired End-State** (vision setting)
-- Steps 2 & 5 **Transform Tasks to Centers** (differentiation)
-- Step 6 **Strengthens Centers** (structure-preserving transformation)
-- Steps 7 & 10 **Compare** results to vision (alignment check)
-- Steps 8 & 11 **Simplify** and assess (correctness/simplicity evaluation)
-- Steps 9 & 12 provide **Feedback** (cycle completion)
+**Process Dynamics (Both Perspectives):**
+
+| Phase | Perspective A | Perspective B | Steps |
+|-------|---------------|---------------|-------|
+| Vision Setting | Analyze/Identify | Desired End-State | 1, 4 |
+| Differentiation | Differentiate Tasks | Transform Tasks to Centers | 2, 5 |
+| Transformation | Strengthen Centres | Strengthen Centers | 6 |
+| Alignment | Integrate with Vision | Compare to Vision | 7, 10 |
+| Evaluation | Evaluate Correctness & Simplicity | Simplify and Assess | 8, 11 |
+| Completion | Assess Vision | Feedback | 9, 12 |
 
 **Four Conditions for Differentiation:**
 - Awareness of the Whole
