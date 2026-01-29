@@ -61,28 +61,43 @@ The KSM combines Alexander's differentiation process with nested iteration cycle
 ```
 
 **Outer Loop (Solution Cycle - Steps 1-3, 10-12):**
-1. **Analyze Problem** in Space and Time
-2. **Differentiate Tasks** into Centres
-3. **Choose Critical Centre** → enters Inner Loop
-10. **Integrate** with Solution Vision
-11. **Evaluate Correctness and Simplicity**
-12. **Assess Solution Vision**
+
+| Step | Action | From | To |
+|------|--------|------|----|
+| 1 | **Desired End-State** | Problem | Solution Vision |
+| 2 | **Transform Tasks to Centers** | Solution Vision | Centers |
+| 3 | **Choose Critical Center** | Centers | → Inner Loop |
+| 10 | **Compare to Solution Vision** | Assess | Solution Vision |
+| 11 | **Simplify the Center; Assess Solution Vision** | Solution Vision | Assess |
+| 12 | **Feedback** | Assess | Problem |
 
 **Inner Loop (Iteration Cycle - Steps 4-9):**
-4. **Identify Constraints and Relationships** → Iteration Vision
-5. **Differentiate Sub-Tasks** to Centres
-6. **Strengthen Centres** → Strengthened Centres
-7. **Integrate** with Iteration Vision
-8. **Evaluate Correctness and Simplicity**
-9. **Assess Iteration Vision** → Strengthened Centre (Iteration)
+
+| Step | Action | From | To |
+|------|--------|------|----|
+| 4 | **Desired End-State** | Strengthen Center (Iteration) | Iteration Vision |
+| 5 | **Transform Tasks to Centers** | Iteration Vision | Centers |
+| 6 | **Strengthen Centers** | Centers | Strengthened Centers |
+| 7 | **Compare to Iteration Vision** | Strengthened Centers | Assess |
+| 8 | **Simplify the Centers; Assess Iteration Vision** | Assess | Iteration Vision |
+| 9 | **Feedback** | Iteration Vision | Strengthen Center (Iteration) |
 
 **Key Entities:**
 - **Problem**: Initial state requiring transformation
-- **Centres**: Differentiated task/sub-task units
-- **Iteration Vision**: Local goal for current iteration
-- **Solution Vision**: Global goal for entire problem
-- **Strengthened Centres**: Successfully transformed centres
-- **Assess**: Evaluation checkpoints
+- **Solution Vision**: Global desired end-state for entire problem
+- **Iteration Vision**: Local desired end-state for current iteration
+- **Centers**: Transformed task/sub-task units
+- **Strengthened Centers**: Successfully transformed centers
+- **Strengthen Center (Iteration)**: Output of inner loop, input to outer loop
+- **Assess**: Comparison/evaluation checkpoints
+
+**Process Dynamics:**
+- Steps 1 & 4 establish **Desired End-State** (vision setting)
+- Steps 2 & 5 **Transform Tasks to Centers** (differentiation)
+- Step 6 **Strengthens Centers** (structure-preserving transformation)
+- Steps 7 & 10 **Compare** results to vision (alignment check)
+- Steps 8 & 11 **Simplify** and assess (correctness/simplicity evaluation)
+- Steps 9 & 12 provide **Feedback** (cycle completion)
 
 **Four Conditions for Differentiation:**
 - Awareness of the Whole
