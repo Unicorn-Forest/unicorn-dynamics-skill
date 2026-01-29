@@ -292,23 +292,57 @@ T1 → T4 → T2 → T5 → T3 → T6 → T7 → T8 → T9 → (repeat)
 
 ---
 
-## Mapping to b9/p9/j9 Architecture
+## Triadic Architecture Mapping (b9/p9/j9)
 
-| T-Code | Architecture | Component | Function |
-|--------|--------------|-----------|----------|
-| T1, T8 | b9 | Connection Edges | Localhost terminal patterns |
-| T2, T7 | p9 | Execution Membranes | Globalhost thread pools |
-| T3, T6 | j9 | Distribution Gradients | Orgalhost topology |
-| T4, T5 | All | Integration | Cross-layer coordination |
-| T9 | All | Renewal | System-wide refresh |
+The T-System organizes into three fundamental triads that map directly to the b9/p9/j9 architecture:
+
+### Form Triad (b9 - Rooted Trees)
+
+| T-Code | Mode | Function |
+|--------|------|----------|
+| T7 | Structure | Memory resources as quantized technique |
+| T4 | Structure | Mental work as sensory/proprioceptive alternation |
+| T1 | Sensory | Perception of the field |
+
+**Architecture:** b9 represents rooted trees serving as connection edge patterns to localhost terminal nodes. The Form triad handles structural perception and memory encoding.
+
+### Void Triad (p9 - Membrane Pools)
+
+| T-Code | Mode | Function |
+|--------|------|----------|
+| T2 | Motor | Creation of idea through feedback |
+| T5 | Process | Physical work with proprioceptive feedback |
+| T8 | Motor | Creative feedback balancing form with idea |
+
+**Architecture:** p9 represents membrane pools serving as execution context membranes for globalhost thread pools. The Void triad handles process execution and motor dynamics.
+
+### Pole Triad (j9 - Resonant Echoes)
+
+| T-Code | Mode | Function |
+|--------|------|----------|
+| T3 | Relational | Transference of idea to form |
+| T6 | Association | Corporeal body mutual identities |
+| T9 | Relational | Renewed perception discretionary hierarchy |
+
+**Architecture:** j9 represents resonant echoes (ESN reservoir) serving as distribution compute gradients for orgalhost topology. The Pole triad handles associative relations and echo state dynamics.
+
+---
+
+## Agent-Arena-Relation (AAR) Core Mapping
+
+| Component | Triad | Architecture | Role |
+|-----------|-------|--------------|------|
+| **Arena** | Form | b9 | State space as rooted tree topology |
+| **Agent** | Void | p9 | Dynamic tensor transformations via membrane execution |
+| **Relation** | Pole | j9 | Continuous interplay via ESN reservoir resonance |
 
 ---
 
 ## AUTOGNOSIS Integration
 
-| Level | T-System | Focus | Output |
-|-------|----------|-------|--------|
-| 0 | T1, T8 | Emission | Raw telemetry signals |
-| 1 | T2, T7 | Patterns | Recognized patterns |
-| 2 | T3, T6 | Self-Image | System self-model |
-| 3 | T4, T5, T9 | Optimization | Improvement recommendations |
+| Level | Focus | Triad | T-Codes | Output |
+|-------|-------|-------|---------|--------|
+| 0 | Emission | Form | T1 (Sensory) | Raw telemetry signals |
+| 1 | Patterns | Form | T4, T7 (Structure) | Recognized structural patterns |
+| 2 | Self-Image | Pole | T3, T6, T9 (Association) | System self-model via ESN resonance |
+| 3 | Optimization | Void | T2, T5, T8 (Process) | Motor/process improvement recommendations |

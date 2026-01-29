@@ -45,25 +45,32 @@ The KSM combines Alexander's differentiation process with PDCA cycles for iterat
 
 Map cognitive/operational phases to four centres (C1-Idea, C2-Knowledge, C3-Routine, C4-Form):
 
-| T-Code | Name | Description | Dimension |
-|--------|------|-------------|-----------|
-| T1 | Perception | Pairs coalesce, need relates to capacity | M/Performance |
-| T2 | Creation | Form fed back through routine to idea | G/Potential |
-| T3 | Transference | Idea transferred to form via knowledge+routine | G/Universal |
-| T4 | Mental Work | Sensory/proprioceptive alternation | C/Commitment |
-| T5 | Physical Work | Idea→Knowledge→Routine with feedback | C/Commitment |
-| T6 | Corporeal Body | Mutual identities within common form | C/Universal |
-| T7 | Memory Resources | Routine+Form quantized as technique | G/Potential |
-| T8 | Creative Feedback | Countercurrent balances form with idea | M/Performance |
-| T9 | Renewed Perception | Discretionary hierarchy: C1→C2→C3→C4 | M/Universal |
+| T-Code | Name | Description | Triad | Mode |
+|--------|------|-------------|-------|------|
+| T1 | Perception | Pairs coalesce, need relates to capacity | Form | Sensory |
+| T4 | Mental Work | Sensory/proprioceptive alternation | Form | Structure |
+| T7 | Memory Resources | Routine+Form quantized as technique | Form | Structure |
+| T2 | Creation | Form fed back through routine to idea | Void | Motor |
+| T5 | Physical Work | Idea→Knowledge→Routine with feedback | Void | Process |
+| T8 | Creative Feedback | Countercurrent balances form with idea | Void | Motor |
+| T3 | Transference | Idea transferred to form via knowledge+routine | Pole | Relational |
+| T6 | Corporeal Body | Mutual identities within common form | Pole | Association |
+| T9 | Renewed Perception | Discretionary hierarchy: C1→C2→C3→C4 | Pole | Relational |
 
-### 4. M/G/C Dimensions
+### 4. Triadic Architecture Mapping
 
-| Code | Dimension | Focus | Architecture |
-|------|-----------|-------|--------------|
-| **M** | Performance | Execution, output, response | b9 (localhost terminal) |
-| **G** | Potential | Ideas, resources, memory | p9 (globalhost membranes) |
-| **C** | Commitment | Work, feedback, integration | j9 (orgalhost topology) |
+The T-System organizes into three triads that map directly to the b9/p9/j9 architecture:
+
+| Triad | T-Codes | Mode | Architecture | Component |
+|-------|---------|------|--------------|----------|
+| **Form** | T7, T4, T1 | Structure / Sensory | b9 | Rooted trees (localhost terminal) |
+| **Void** | T2, T5, T8 | Process / Motor | p9 | Membrane pools (globalhost threads) |
+| **Pole** | T3, T6, T9 | Association / Relational | j9 | Resonant echoes (ESN reservoir) |
+
+This triadic structure reflects the Agent-Arena-Relation (AAR) core:
+- **b9 (Form/Structure)**: The arena as rooted tree topology
+- **p9 (Void/Process)**: The agent as membrane execution dynamics
+- **j9 (Pole/Association)**: The relation as echo state network resonance
 
 ## Grove Graphic Guides
 
@@ -120,20 +127,20 @@ Map cognitive/operational phases to four centres (C1-Idea, C2-Knowledge, C3-Rout
 
 ### Telemetry Mapping
 
-| Layer | Component | Metrics | Guides |
-|-------|-----------|---------|--------|
-| **b9** | Connection Edges | Localhost terminal patterns | Context Map, Stakeholder Map |
-| **p9** | Execution Membranes | Globalhost thread pools | Graphic Gameplan, Graphic Roadmap |
-| **j9** | Distribution Gradients | Orgalhost topology | Investment Portfolio, Value Proposition |
+| Layer | Triad | Component | T-Codes | Guides |
+|-------|-------|-----------|---------|--------|
+| **b9** | Form | Rooted trees (structure/sensory) | T7, T4, T1 | Context Map, Graphic History |
+| **p9** | Void | Membrane pools (process/motor) | T2, T5, T8 | Graphic Gameplan, Graphic Roadmap |
+| **j9** | Pole | Resonant echoes (association/ESN) | T3, T6, T9 | Stakeholder Map, Value Proposition |
 
 ### AUTOGNOSIS Levels
 
-| Level | Focus | T-System | Output |
-|-------|-------|----------|--------|
-| 0 | Emission | T1, T8 | Raw telemetry signals |
-| 1 | Patterns | T2, T7 | Recognized patterns |
-| 2 | Self-Image | T3, T6 | System self-model |
-| 3 | Optimization | T4, T5, T9 | Improvement recommendations |
+| Level | Focus | Triad | T-Codes | Output |
+|-------|-------|-------|---------|--------|
+| 0 | Emission | Form | T1 (Sensory) | Raw telemetry signals |
+| 1 | Patterns | Form | T4, T7 (Structure) | Recognized structural patterns |
+| 2 | Self-Image | Pole | T3, T6, T9 (Association) | System self-model via ESN resonance |
+| 3 | Optimization | Void | T2, T5, T8 (Process) | Motor/process improvement recommendations |
 
 ## Team Performance (Drexler/Sibbet Model)
 

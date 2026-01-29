@@ -14,9 +14,9 @@ from enum import Enum
 
 
 class ArchitectureLayer(Enum):
-    B9 = "b9"  # Connection Edges - localhost terminal patterns
-    P9 = "p9"  # Execution Membranes - globalhost thread pools
-    J9 = "j9"  # Distribution Gradients - orgalhost topology
+    B9 = "b9"  # Form Triad - Rooted trees (structure/sensory) - T7, T4, T1
+    P9 = "p9"  # Void Triad - Membrane pools (process/motor) - T2, T5, T8
+    J9 = "j9"  # Pole Triad - Resonant echoes/ESN (association/relational) - T3, T6, T9
 
 
 class AutognosisLevel(Enum):
@@ -26,17 +26,17 @@ class AutognosisLevel(Enum):
     OPTIMIZATION = 3 # Improvement recommendations
 
 
-class Dimension(Enum):
-    M = "Performance"  # Execution, output, response
-    G = "Potential"    # Ideas, resources, memory
-    C = "Commitment"   # Work, feedback, integration
+class Triad(Enum):
+    FORM = "Form"      # Structure/Sensory - b9 rooted trees
+    VOID = "Void"      # Process/Motor - p9 membrane pools  
+    POLE = "Pole"      # Association/Relational - j9 resonant echoes (ESN)
 
 
 @dataclass
 class TelemetryMetric:
     name: str
     layer: ArchitectureLayer
-    dimension: Dimension
+    triad: Triad
     autognosis_level: AutognosisLevel
     t_codes: List[str]
     description: str
@@ -46,82 +46,82 @@ class TelemetryMetric:
 
 # Standard telemetry metrics for Unicorn Dynamics
 METRICS = {
-    # b9 Layer - Connection Edges
+    # b9 Layer - Form Triad (Rooted Trees: T7, T4, T1)
     "connection_latency": TelemetryMetric(
-        "Connection Latency", ArchitectureLayer.B9, Dimension.M,
-        AutognosisLevel.EMISSION, ["T1", "T8"],
+        "Connection Latency", ArchitectureLayer.B9, Triad.FORM,
+        AutognosisLevel.EMISSION, ["T1"],
         "Time to establish localhost terminal connections", "ms",
         {"warning": 100, "critical": 500}
     ),
     "edge_throughput": TelemetryMetric(
-        "Edge Throughput", ArchitectureLayer.B9, Dimension.M,
+        "Edge Throughput", ArchitectureLayer.B9, Triad.FORM,
         AutognosisLevel.EMISSION, ["T1"],
         "Data transfer rate across connection edges", "MB/s",
         {"warning": 10, "critical": 1}
     ),
     "terminal_sessions": TelemetryMetric(
-        "Terminal Sessions", ArchitectureLayer.B9, Dimension.M,
-        AutognosisLevel.PATTERNS, ["T8"],
+        "Terminal Sessions", ArchitectureLayer.B9, Triad.FORM,
+        AutognosisLevel.PATTERNS, ["T4", "T7"],
         "Active localhost terminal session count", "count",
         {"warning": 100, "critical": 200}
     ),
     
-    # p9 Layer - Execution Membranes
+    # p9 Layer - Void Triad (Membrane Pools: T2, T5, T8)
     "membrane_utilization": TelemetryMetric(
-        "Membrane Utilization", ArchitectureLayer.P9, Dimension.G,
-        AutognosisLevel.PATTERNS, ["T2", "T7"],
+        "Membrane Utilization", ArchitectureLayer.P9, Triad.VOID,
+        AutognosisLevel.OPTIMIZATION, ["T2", "T5", "T8"],
         "Percentage of execution membrane capacity in use", "%",
         {"warning": 80, "critical": 95}
     ),
     "thread_pool_depth": TelemetryMetric(
-        "Thread Pool Depth", ArchitectureLayer.P9, Dimension.G,
-        AutognosisLevel.PATTERNS, ["T2"],
+        "Thread Pool Depth", ArchitectureLayer.P9, Triad.VOID,
+        AutognosisLevel.OPTIMIZATION, ["T2", "T5"],
         "Globalhost thread pool queue depth", "count",
         {"warning": 50, "critical": 100}
     ),
     "scope_nesting": TelemetryMetric(
-        "Scope Nesting Level", ArchitectureLayer.P9, Dimension.G,
-        AutognosisLevel.SELF_IMAGE, ["T3", "T6"],
+        "Scope Nesting Level", ArchitectureLayer.P9, Triad.VOID,
+        AutognosisLevel.OPTIMIZATION, ["T5", "T8"],
         "Current P-system nested scope depth", "level",
         {"warning": 8, "critical": 12}
     ),
     "memory_allocation": TelemetryMetric(
-        "Memory Allocation", ArchitectureLayer.P9, Dimension.G,
-        AutognosisLevel.EMISSION, ["T7"],
-        "Memory allocated to execution membranes", "GB",
+        "Memory Allocation", ArchitectureLayer.B9, Triad.FORM,
+        AutognosisLevel.PATTERNS, ["T7"],
+        "Memory allocated as quantized technique", "GB",
         {"warning": 12, "critical": 15}
     ),
     
-    # j9 Layer - Distribution Gradients
+    # j9 Layer - Pole Triad (Resonant Echoes/ESN: T3, T6, T9)
     "gradient_entropy": TelemetryMetric(
-        "Gradient Entropy", ArchitectureLayer.J9, Dimension.C,
+        "Gradient Entropy", ArchitectureLayer.J9, Triad.POLE,
         AutognosisLevel.SELF_IMAGE, ["T3", "T6"],
-        "Distribution uniformity across orgalhost topology", "bits",
+        "Distribution uniformity across ESN reservoir topology", "bits",
         {"warning": 2.5, "critical": 1.5}
     ),
     "topology_coverage": TelemetryMetric(
-        "Topology Coverage", ArchitectureLayer.J9, Dimension.C,
-        AutognosisLevel.PATTERNS, ["T4", "T5"],
-        "Percentage of topology nodes actively participating", "%",
+        "Topology Coverage", ArchitectureLayer.J9, Triad.POLE,
+        AutognosisLevel.SELF_IMAGE, ["T6", "T9"],
+        "Percentage of ESN nodes actively participating", "%",
         {"warning": 70, "critical": 50}
     ),
-    "compute_distribution": TelemetryMetric(
-        "Compute Distribution", ArchitectureLayer.J9, Dimension.C,
-        AutognosisLevel.OPTIMIZATION, ["T4", "T5", "T9"],
-        "Evenness of compute load across distribution gradients", "ratio",
+    "resonance_coherence": TelemetryMetric(
+        "Resonance Coherence", ArchitectureLayer.J9, Triad.POLE,
+        AutognosisLevel.SELF_IMAGE, ["T3", "T6", "T9"],
+        "Echo state network reservoir coherence", "ratio",
         {"warning": 0.7, "critical": 0.5}
     ),
     
     # Cross-layer metrics
     "system_coherence": TelemetryMetric(
-        "System Coherence", ArchitectureLayer.B9, Dimension.M,
+        "System Coherence", ArchitectureLayer.J9, Triad.POLE,
         AutognosisLevel.SELF_IMAGE, ["T9"],
-        "Overall system integration and alignment score", "score",
+        "Overall system integration via AAR core", "score",
         {"warning": 0.7, "critical": 0.5}
     ),
     "renewal_cycle_time": TelemetryMetric(
-        "Renewal Cycle Time", ArchitectureLayer.P9, Dimension.G,
-        AutognosisLevel.OPTIMIZATION, ["T9"],
+        "Renewal Cycle Time", ArchitectureLayer.J9, Triad.POLE,
+        AutognosisLevel.SELF_IMAGE, ["T9"],
         "Time to complete full T-system renewal cycle", "seconds",
         {"warning": 300, "critical": 600}
     ),
@@ -145,7 +145,7 @@ def evaluate_metric(metric_key: str, value: float) -> str:
     thresholds = metric.thresholds
     
     # Handle metrics where lower is worse
-    if metric_key in ["edge_throughput", "topology_coverage", "compute_distribution", 
+    if metric_key in ["edge_throughput", "topology_coverage", "resonance_coherence", 
                       "system_coherence", "gradient_entropy"]:
         if value <= thresholds["critical"]:
             return "critical"
@@ -162,11 +162,14 @@ def evaluate_metric(metric_key: str, value: float) -> str:
 
 
 def map_to_grove_guides(layer: ArchitectureLayer) -> List[str]:
-    """Map architecture layer to recommended Grove Guides."""
+    """Map architecture layer (triad) to recommended Grove Guides."""
     mapping = {
-        ArchitectureLayer.B9: ["Context Map", "Stakeholder Map", "Graphic History"],
+        # b9 Form Triad - Structure/Sensory guides
+        ArchitectureLayer.B9: ["Context Map", "Graphic History", "SPOT Matrix"],
+        # p9 Void Triad - Process/Motor guides  
         ArchitectureLayer.P9: ["Graphic Gameplan", "Graphic Roadmap", "Five Bold Steps"],
-        ArchitectureLayer.J9: ["Investment Portfolio", "Value Proposition", "Industry Structure Map"],
+        # j9 Pole Triad - Association/Relational guides
+        ArchitectureLayer.J9: ["Stakeholder Map", "Value Proposition", "Journey Vision"],
     }
     return mapping.get(layer, [])
 
@@ -235,7 +238,7 @@ def generate_telemetry_report(readings: List[TelemetryReading]) -> dict:
                 "metric": metric.name,
                 "status": status,
                 "layer": layer_key,
-                "dimension": metric.dimension.value,
+                "triad": metric.triad.value,
                 "suggested_guides": guides,
                 "t_codes": metric.t_codes,
             })
@@ -264,7 +267,7 @@ def format_report_markdown(report: dict) -> str:
     
     for layer_key, layer_data in report["by_layer"].items():
         status_emoji = {"normal": "🟢", "warning": "🟡", "critical": "🔴"}[layer_data["status"]]
-        layer_names = {"b9": "b9 (Connection Edges)", "p9": "p9 (Execution Membranes)", "j9": "j9 (Distribution Gradients)"}
+        layer_names = {"b9": "b9 Form (Rooted Trees)", "p9": "p9 Void (Membrane Pools)", "j9": "j9 Pole (Resonant Echoes)"}
         
         lines.append(f"### {status_emoji} {layer_names[layer_key]}")
         lines.append("")
@@ -286,7 +289,7 @@ def format_report_markdown(report: dict) -> str:
         
         for rec in report["recommendations"]:
             lines.append(f"### {rec['metric']} ({rec['status'].upper()})")
-            lines.append(f"- **Layer:** {rec['layer']} | **Dimension:** {rec['dimension']}")
+            lines.append(f"- **Layer:** {rec['layer']} | **Triad:** {rec['triad']}")
             lines.append(f"- **T-Codes:** {', '.join(rec['t_codes'])}")
             lines.append(f"- **Suggested Grove Guides:** {', '.join(rec['suggested_guides'])}")
             lines.append("")
