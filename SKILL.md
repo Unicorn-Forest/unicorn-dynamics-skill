@@ -11,20 +11,78 @@ Strategic visual planning and operational intelligence framework integrating Gro
 
 ### 1. Knowledge Sharing Mechanism (KSM)
 
-The KSM combines Alexander's differentiation process with PDCA cycles for iterative problem-solving.
+The KSM combines Alexander's differentiation process with nested iteration cycles for problem-solving through centre strengthening.
 
-**Alexander's 11-Step Differentiation Process:**
-1. Observe partially evolved state (wholeness as system of centres)
-2. Attend to wholeness - global order, actual and latent
-3. Identify where structure is weakest as a whole
-4. Look for latent centres dimly present
-5. Choose one latent centre to strengthen
-6. Apply structure-preserving transformations
-7. New centres are born, strengthening the whole
-8. Increase strength of larger, parallel, and smaller centres
-9. Test that life has actually increased
-10. Test that differentiation is simplest possible
-11. Return to beginning, repeat cycle
+**KSM 12-Step Differentiation Cycle:**
+
+```
+                    ┌─────────────────────────────────────────────────┐
+                    │         OUTER LOOP (Solution)              │
+                    │                                             │
+    10. Integrate   │    ┌───────────────────────────┐        │
+    with Solution   │    │  INNER LOOP (Iteration)  │        │
+    Vision          │    │                           │        │
+         │         │    │  4. Identify Constraints  │        │
+         ▼         │    │     and Relationships     │        │
+    ┌────────┐    │    │            │              │        │
+    │ Assess │    │    │            ▼              │        │
+    └────────┘    │    │    [Iteration Vision]    │        │
+         │         │    │            │              │        │
+    11. Evaluate    │    │  5. Differentiate        │  3. Choose
+    Correctness     │    │     Sub-Tasks to         │  Critical
+    & Simplicity    │    │     Centres              │  Centre
+         │         │    │            │              │        │
+         ▼         │    │            ▼              │        │
+    ┌───────────┐  │    │       [Centres]          │◄────────┘
+    │ Solution │  │    │            │              │
+    │  Vision  │  │    │  6. Strengthen Centres   │
+    └───────────┘  │    │            │              │
+         ▲         │    │            ▼              │
+    12. Assess      │    │  [Strengthened Centres] │
+    Solution        │    │            │              │
+    Vision          │    │  7. Integrate with       │
+         │         │    │     Iteration Vision     │
+         │         │    │            │              │
+    ┌─────────┐   │    │            ▼              │
+    │ Problem │   │    │       [Assess]           │
+    └─────────┘   │    │            │              │
+         ▲         │    │  8. Evaluate Correctness │
+    1. Analyze      │    │     and Simplicity       │
+    Problem in      │    │            │              │
+    Space & Time    │    │            ▼              │
+         │         │    │  9. Assess Iteration     │
+    2. Differentiate│    │     Vision               │
+    Tasks into      │    │            │              │
+    Centres         │    │            ▼              │
+         │         │    │  [Strengthened Centre    │
+         └─────────┴────┴─── (Iteration)] ────────┘
+                    │                                             │
+                    └─────────────────────────────────────────────┘
+```
+
+**Outer Loop (Solution Cycle - Steps 1-3, 10-12):**
+1. **Analyze Problem** in Space and Time
+2. **Differentiate Tasks** into Centres
+3. **Choose Critical Centre** → enters Inner Loop
+10. **Integrate** with Solution Vision
+11. **Evaluate Correctness and Simplicity**
+12. **Assess Solution Vision**
+
+**Inner Loop (Iteration Cycle - Steps 4-9):**
+4. **Identify Constraints and Relationships** → Iteration Vision
+5. **Differentiate Sub-Tasks** to Centres
+6. **Strengthen Centres** → Strengthened Centres
+7. **Integrate** with Iteration Vision
+8. **Evaluate Correctness and Simplicity**
+9. **Assess Iteration Vision** → Strengthened Centre (Iteration)
+
+**Key Entities:**
+- **Problem**: Initial state requiring transformation
+- **Centres**: Differentiated task/sub-task units
+- **Iteration Vision**: Local goal for current iteration
+- **Solution Vision**: Global goal for entire problem
+- **Strengthened Centres**: Successfully transformed centres
+- **Assess**: Evaluation checkpoints
 
 **Four Conditions for Differentiation:**
 - Awareness of the Whole
